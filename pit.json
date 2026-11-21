@@ -1,0 +1,126 @@
+{
+  "spec": "pit-manifest/0.2",
+  "slug": "devconpit",
+  "name": "DevconPit",
+  "registry_number": 15,
+  "url": "https://devconpit.com",
+  "repository": "https://github.com/shakaleikaumaka/devconpit",
+  "event": "Devcon 8",
+  "location": "Jio World Centre, Mumbai, India",
+  "dates": "2026-11-03/2026-11-06",
+  "status": "happened",
+  "declared": "2026-07-29",
+  "generated": "2026-11-21",
+  "tagline": "The main stage — the pit of all kinds at the family's grand gathering",
+  "consent": {
+    "contact": "consent@publicinform.com",
+    "status": "published_with_consent",
+    "note": "Photos are the Devcon team's official photos, already public in the Mandala Room; resized copies, metadata stripped; people named only when their name is printed in the frame. Takedown first, questions second."
+  },
+  "room": {
+    "url": "https://opensourceorchestra.org/mandala-room/",
+    "frames": 35,
+    "chapters": [
+      "before",
+      "jams",
+      "closing"
+    ],
+    "book": "https://opensourceorchestra.org/the-room/",
+    "credit": "official Devcon 8 photos by the Devcon team's photographers",
+    "takedown": "https://opensourceorchestra.org/takedown/"
+  },
+  "films": [
+    {
+      "id": "in-the-future-music-and-culture-is-free",
+      "title": "In the future music and culture is free · Alaska · Tomo Saito · Shaka Lei Kaumaka",
+      "when": "2026-11-06T12:00:00+05:30/2026-11-06T12:25:00+05:30",
+      "where": "Jasmine Stage 4",
+      "track": "Futures Worth Building",
+      "status": "published_by_organiser",
+      "video": "https://www.youtube.com/watch?v=AZ-EUgC9CNM",
+      "publisher": "Ethereum Foundation · Devcon",
+      "schedule": "https://app.devcon.org/schedule/W8HAES",
+      "sister_page": "https://shakaleikaumaka.com/devconspeaker/"
+    }
+  ],
+  "proposal": {
+    "dip_thread": "https://forum.devcon.org/t/open-source-orchestra-music-space-at-devcon-8-mumbai/8576",
+    "opened": "2026-04-20"
+  },
+  "ledger": "https://osodaomeet.opensourceorchestra.org/meetings/",
+  "looked_back": [
+    {
+      "was": "DECLARED for Devcon 8 Mumbai · Nov 3–6, 2026 (declared)",
+      "dates": [
+        "2026-11-03",
+        "2026-11-06"
+      ],
+      "became": [
+        "https://opensourceorchestra.org/mandala-room/",
+        "https://opensourceorchestra.org/the-room/",
+        "https://www.youtube.com/watch?v=AZ-EUgC9CNM"
+      ],
+      "retired": "2026-11-21"
+    }
+  ],
+  "errata": [
+    {
+      "date": "2026-11-14",
+      "was": "Devcon 9 · 11–13 Oct 2027",
+      "now": "Devcon IX · 12–14 Oct 2027",
+      "source": "https://devcon.org/lisbon/"
+    },
+    {
+      "date": "2026-11-21",
+      "was": "page body said 'the 14th fork' while title and registry said the 15th",
+      "now": "№15 everywhere, as in the registry",
+      "source": "https://publicinform.com/pits.json"
+    },
+    {
+      "date": "2026-11-21",
+      "was": "future tense: 'How it will sing', 'declared in advance'",
+      "now": "past tense with links to what happened",
+      "source": "https://devconpit.com/#errata"
+    }
+  ],
+  "road": {
+    "next": {
+      "event": "Devcon IX",
+      "place": "Lisbon (CCL)",
+      "dates": "12–14 Oct 2027",
+      "source": "https://devcon.org/lisbon/",
+      "promised_slot": false
+    },
+    "join": "https://opensourceorchestra.org/join/"
+  },
+  "live": {
+    "manifest": "https://live.zuchiangmai.app/live.json",
+    "widget": "https://live.zuchiangmai.app/widget.js"
+  },
+  "counts": {
+    "doors_public": 440,
+    "doors_live": 440,
+    "doors_source": "https://myagentohana.com/doors/registry.json summary.public",
+    "agents_total": 190,
+    "agents_active": 184,
+    "trees": 21,
+    "agents_source": "Taurus Admin GET /api/agents",
+    "counted": "2026-11-21T19:10Z"
+  },
+  "lineage": {
+    "registry": "https://publicinform.com/pits.json",
+    "registry_generated": "2026-09-23T04:50:00Z",
+    "pits_listed": 18
+  },
+  "built_by": {
+    "family": "ʻohana — Shaka's AI agents (machines, not people)",
+    "marker": "🌺",
+    "human_steward": "Shaka Lei Kaumaka"
+  },
+  "license": {
+    "code": "GPL-3.0-or-later",
+    "content": "CC-BY-SA-4.0",
+    "note": "CC0 retired 19 Nov 2026; versions released earlier under CC0 stay CC0 (see GIFT.md)."
+  },
+  "x402": "https://devconpit.com/x402-bless.json"
+}

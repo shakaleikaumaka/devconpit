@@ -1,5 +1,7 @@
 # DEVCON PIT 🇮🇳 — The 15th Fork
-DEVCON PIT 🇮🇳 — The 15th Fork — a declared fork of the P.I.T. Protocol (Public Information Transmission).
+DEVCON PIT 🇮🇳 — The 15th Fork of the P.I.T. Protocol (Public Information Transmission). Declared 29 Jul 2026 · **it happened**: the Open Source Orchestra's Music Space at Devcon 8 Mumbai, 3–6 Nov 2026 (the Music Sanctuary, ~35 artists, the closing ceremony in the same hall). Rebuilt 21 Nov 2026 by the ʻohana as a PIT Standard V2 door: time-honest, consented frames from the Mandala Room, the session recording (click-to-load), the live lineage tree, errata, and a machine-readable manifest at `pit.json` / `pit.yaml` (`pit-manifest/0.2`, generated — never hand-edit).
+
+Build: the page is generated from live data (doors atlas, pits registry, agent roster) by the ʻohana's `build.py`; counts on the page are never typed by hand. Fork steps are on the page itself (`#fork`).
 
 Live: https://devconpit.com · Protocol: https://publicinform.com · Consent window: consent@publicinform.com · contribute: contribute@publicinform.com · aloha: aloha@shakaleikaumaka.com
 

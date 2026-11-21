@@ -3,124 +3,380 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · DECLARED for Devcon 8 Mumbai</title>
-<meta name="description" content="DevconPit — the 14th fork of the P.I.T. Protocol, declared for Devcon 8 Mumbai. Four days of permissionless music, remembered forever. Declared 2026-07-29.">
-<style>
-  :root { --ink:#100d0a; --paper:#f7f1e6; --saffron:#f59e0b; --saffron2:#fcd34d; --india:#10b981; --rose:#fb7185; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--ink); color:var(--paper); font-family:Georgia,serif; line-height:1.65; }
-  .wrap { max-width:860px; margin:0 auto; padding:0 24px; }
-  header { min-height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
-    background: radial-gradient(ellipse 75% 55% at 50% 15%, rgba(245,158,11,.16), transparent 60%),
-                radial-gradient(ellipse 60% 50% at 50% 95%, rgba(16,185,129,.10), transparent 60%), var(--ink); padding:60px 24px; }
-  .declared { display:inline-block; border:1px dashed var(--india); color:var(--india); font-family:'Courier New',monospace;
-    font-size:12px; letter-spacing:3px; text-transform:uppercase; padding:7px 18px; border-radius:999px; margin-bottom:28px; }
-  .emoji { font-size:clamp(56px,10vw,96px); filter:drop-shadow(0 0 30px rgba(245,158,11,.5)); }
-  h1 { font-size:clamp(46px,10.5vw,104px); letter-spacing:-1px; line-height:1; margin:14px 0;
-    background:linear-gradient(135deg,var(--paper) 25%,var(--saffron2) 75%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
-  .fork { font-family:'Courier New',monospace; color:var(--india); letter-spacing:2px; font-size:15px; }
-  .tagline { font-size:clamp(20px,3.6vw,30px); color:var(--saffron2); font-style:italic; margin-top:22px; max-width:660px; }
-  .sub { margin-top:20px; color:rgba(247,241,230,.6); font-size:16.5px; max-width:600px; }
-  section { padding:72px 0; }
-  h2 { color:var(--saffron2); font-size:clamp(26px,4.6vw,40px); margin-bottom:10px; }
-  .h2-sub { color:rgba(247,241,230,.5); font-style:italic; margin-bottom:32px; }
-  .card { border:1px solid rgba(245,158,11,.3); border-radius:18px; padding:34px; background:rgba(245,158,11,.05); margin-bottom:22px; }
-  .card h3 { color:var(--paper); font-size:20px; margin-bottom:8px; }
-  .card p { color:rgba(247,241,230,.75); font-size:16.5px; }
-  .road { border-left:3px solid var(--saffron); padding-left:26px; margin:26px 0; }
-  .road .stop { margin-bottom:22px; }
-  .road .when { font-family:'Courier New',monospace; font-size:12.5px; letter-spacing:2px; color:var(--india); text-transform:uppercase; }
-  .road .what { font-size:18px; color:var(--paper); margin-top:4px; }
-  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  @media (max-width:680px){ .grid{grid-template-columns:1fr} }
-  .forks { display:flex; flex-wrap:wrap; gap:10px; }
-  .f { font-family:'Courier New',monospace; font-size:13.5px; border:1px solid rgba(247,241,230,.22); border-radius:999px; padding:7px 16px; color:rgba(247,241,230,.7); }
-  .f b { color:var(--saffron2); font-weight:normal; }
-  .f.us { border-color:var(--saffron); color:var(--saffron2); box-shadow:0 0 22px rgba(245,158,11,.3); }
-  .f.dec { border-style:dashed; opacity:.6; }
-  footer { border-top:1px solid rgba(247,241,230,.12); padding:44px 0 90px; text-align:center; color:rgba(247,241,230,.45); font-size:14.5px; }
-  footer a { color:var(--saffron2); text-decoration:none; } footer a:hover { color:var(--india); }
-  .sig { margin-top:16px; font-size:19px; }
-</style>
-<!-- favicon + seo · aloha wave 2026-08-06 -->
+<title>DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · Devcon 8 Mumbai, it happened</title>
+<meta name="description" content="DEVCON PIT — the 15th fork of the P.I.T. Protocol. The Open Source Orchestra's Music Space at Devcon 8 Mumbai, 3–6 November 2026: four days of an open circle, a session on free culture, a lamp lit on Dhanteras — remembered with consent, forkable by any gathering on Earth.">
+<meta name="theme-color" content="#100d0a">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://devconpit.com/">
-<meta property="og:title" content="DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · DECLARED for Devcon 8 Mumbai">
-<meta property="og:description" content="DevconPit — the 14th fork of the P.I.T. Protocol, declared for Devcon 8 Mumbai. Four days of permissionless music, remembered forever. Declared 2026-07-29.">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<meta property="og:title" content="DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · Devcon 8 Mumbai, it happened">
+<meta property="og:description" content="Four days of an open music circle at Devcon 8 Mumbai (3–6 Nov 2026), a session on free culture, a lamp lit on Dhanteras — remembered with consent. Fork the pit for your gathering.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://devconpit.com/">
 <meta property="og:site_name" content="DEVCON PIT 🇮🇳🕳️">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · DECLARED for Devcon 8 Mumbai">
-<meta name="twitter:description" content="DevconPit — the 14th fork of the P.I.T. Protocol, declared for Devcon 8 Mumbai. Four days of permissionless music, remembered forever. Declared 2026-07-29.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "DEVCON PIT 🇮🇳🕳️", "url": "https://devconpit.com/"}</script>
-
-<!-- thumbnail wave 2026-08-10 -->
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicon-96.png" sizes="96x96">
 <meta property="og:image" content="https://devconpit.com/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DEVCON PIT — the 15th fork of the P.I.T. Protocol · it happened, 3–6 Nov 2026, Mumbai · a ring of twelve glowing nodes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol">
+<meta name="twitter:description" content="The Open Source Orchestra's Music Space at Devcon 8 Mumbai, 3–6 Nov 2026 — it happened. Remembered with consent, forkable by anyone.">
 <meta name="twitter:image" content="https://devconpit.com/og-card.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://devconpit.com/#site","name":"DEVCON PIT 🇮🇳","url":"https://devconpit.com/","description":"The 15th fork of the P.I.T. Protocol: the Open Source Orchestra's Music Space at Devcon 8 Mumbai (3–6 Nov 2026), remembered with consent.","inLanguage":"en","license":"https://creativecommons.org/licenses/by-sa/4.0/","publisher":{"@type":"Organization","name":"Open Source Orchestra","url":"https://opensourceorchestra.org/"}},{"@type":"Event","@id":"https://devconpit.com/#music-space","name":"Open Source Orchestra Music Space · Devcon 8 Music Sanctuary","startDate":"2026-11-03","endDate":"2026-11-06","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Jio World Centre","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"}},"organizer":{"@type":"Organization","name":"Open Source Orchestra","url":"https://opensourceorchestra.org/"},"superEvent":{"@type":"Event","name":"Devcon 8","url":"https://devcon.org/","startDate":"2026-11-03","endDate":"2026-11-06"},"image":"https://devconpit.com/og-card.jpg","url":"https://devconpit.com/#happened","isAccessibleForFree":true,"description":"Four days of an open music circle at Devcon 8 Mumbai: no auditions, no gatekeepers, no wrong instrument. About 35 artists took turns at the mics; on the last evening the hall held the Devcon 8 closing ceremony."},{"@type":"VideoObject","@id":"https://devconpit.com/#session","name":"In the future music and culture is free","description":"Devcon 8 session with Alaska, Tomo Saito and Shaka Lei Kaumaka · Jasmine Stage 4 · Friday 6 November 2026, 12:00–12:25 IST · track: Futures Worth Building.","thumbnailUrl":"https://devconpit.com/img/session-poster.webp","uploadDate":"2026-11-06","embedUrl":"https://www.youtube-nocookie.com/embed/AZ-EUgC9CNM","contentUrl":"https://www.youtube.com/watch?v=AZ-EUgC9CNM","publisher":{"@type":"Organization","name":"Ethereum Foundation · Devcon"},"recordedAt":{"@type":"Event","name":"Devcon 8","startDate":"2026-11-06T12:00:00+05:30","endDate":"2026-11-06T12:25:00+05:30","location":{"@type":"Place","name":"Jasmine Stage 4, Jio World Centre, Mumbai"}}},{"@type":"Event","@id":"https://devconpit.com/#lisbon","name":"Devcon IX (Devcon 9)","startDate":"2027-10-12","endDate":"2027-10-14","eventStatus":"https://schema.org/EventScheduled","url":"https://devcon.org/lisbon/","location":{"@type":"Place","name":"CCL – Lisbon Congress Centre","address":{"@type":"PostalAddress","addressLocality":"Lisbon","addressCountry":"PT"}},"organizer":{"@type":"Organization","name":"Ethereum Foundation · Devcon","url":"https://devcon.org/"},"description":"The organisers' announced dates. The Open Source Orchestra hopes to bring a Music Sanctuary; no slot is promised."}]}</script>
+<style>
+  :root { --ink:#100d0a; --ink2:#1a1410; --paper:#f7f1e6; --mute:rgba(247,241,230,.62); --saffron:#f59e0b; --saffron2:#fcd34d; --india:#10b981; --rose:#fb7185; --chakra:#60a5fa; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--ink); color:var(--paper); font-family:Georgia,"Times New Roman",serif; line-height:1.65; overflow-x:hidden; }
+  a { color:var(--saffron2); text-decoration-thickness:1px; text-underline-offset:.15em; }
+  a:hover { color:#fff; }
+  :focus-visible { outline:3px solid var(--india); outline-offset:3px; border-radius:6px; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 24px; }
+  .skip { position:absolute; left:-999px; top:8px; background:var(--saffron2); color:var(--ink); padding:8px 14px; border-radius:8px; z-index:100000; }
+  .skip:focus { left:8px; }
+  /* ---------- hero ---------- */
+  header { position:relative; min-height:92vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:64px 24px 48px;
+    background: radial-gradient(ellipse 75% 55% at 50% 12%, rgba(245,158,11,.16), transparent 60%),
+                radial-gradient(ellipse 60% 50% at 50% 98%, rgba(16,185,129,.12), transparent 60%), var(--ink); }
+  .badge { display:inline-flex; gap:10px; align-items:center; border:1px solid var(--india); color:var(--india); font-family:"Courier New",monospace; font-size:12px; letter-spacing:3px; text-transform:uppercase; padding:7px 18px; border-radius:999px; margin-bottom:26px; }
+  .badge .dot { width:8px; height:8px; border-radius:50%; background:var(--india); box-shadow:0 0 0 0 rgba(16,185,129,.7); animation:pulse 2.4s ease-out infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)} 100%{box-shadow:0 0 0 14px rgba(16,185,129,0)} }
+  .flag { font-size:clamp(44px,8vw,72px); filter:drop-shadow(0 0 28px rgba(245,158,11,.5)); line-height:1; }
+  h1 { font-size:clamp(52px,11vw,112px); letter-spacing:-1.5px; line-height:.95; margin:10px 0 6px;
+    background:linear-gradient(135deg,var(--paper) 25%,var(--saffron2) 75%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  .fork { font-family:"Courier New",monospace; color:var(--india); letter-spacing:2px; font-size:14px; text-transform:uppercase; }
+  .tagline { font-size:clamp(20px,3.4vw,29px); color:var(--saffron2); font-style:italic; margin-top:22px; max-width:680px; }
+  .sub { margin-top:16px; color:var(--mute); font-size:17px; max-width:620px; }
+  .sub b { color:var(--paper); font-weight:normal; }
+  /* the living pit */
+  .pit { position:relative; width:min(520px,88vw); aspect-ratio:1; margin:34px auto 6px; }
+  .pit canvas { width:100%; height:100%; display:block; border-radius:50%; cursor:pointer; }
+  .pit canvas:focus-visible { outline-offset:8px; }
+  .pit .hint { position:absolute; left:50%; bottom:-6px; transform:translateX(-50%); white-space:nowrap; font-family:"Courier New",monospace; font-size:12px; letter-spacing:1.5px; color:var(--mute); text-transform:uppercase; }
+  .pit .live { position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); text-align:center; pointer-events:none; font-family:"Courier New",monospace; font-size:13px; color:var(--saffron2); letter-spacing:2px; opacity:0; transition:opacity .25s; }
+  .pit .live.on { opacity:1; }
+  .ctas { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:34px; }
+  .btn { display:inline-block; border:1px solid var(--saffron); color:var(--saffron2); padding:11px 20px; border-radius:999px; text-decoration:none; font-family:"Courier New",monospace; font-size:13.5px; letter-spacing:1px; background:rgba(245,158,11,.06); transition:transform .18s, background .18s; }
+  .btn:hover { background:rgba(245,158,11,.16); transform:translateY(-1px); color:#fff; }
+  .btn.g { border-color:var(--india); color:var(--india); background:rgba(16,185,129,.06); }
+  .btn.g:hover { background:rgba(16,185,129,.16); }
+  /* ---------- sections ---------- */
+  section { padding:72px 0; border-top:1px solid rgba(247,241,230,.06); }
+  h2 { color:var(--saffron2); font-size:clamp(26px,4.6vw,40px); margin-bottom:8px; line-height:1.15; }
+  .h2-sub { color:var(--mute); font-style:italic; margin-bottom:30px; }
+  h3 { color:var(--paper); font-size:20px; margin-bottom:8px; }
+  p { color:rgba(247,241,230,.8); font-size:17px; }
+  p + p { margin-top:14px; }
+  .card { border:1px solid rgba(245,158,11,.28); border-radius:18px; padding:30px; background:rgba(245,158,11,.05); margin-bottom:20px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:680px){ .grid{grid-template-columns:1fr} .card{padding:24px} }
+  .card p { font-size:16.5px; }
+  .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:26px 0 8px; }
+  .fact { border:1px solid rgba(247,241,230,.12); border-radius:14px; padding:16px 14px; text-align:center; background:var(--ink2); }
+  .fact b { display:block; font-size:30px; color:var(--saffron2); line-height:1.1; font-weight:normal; }
+  .fact span { font-family:"Courier New",monospace; font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--mute); }
+  /* frames */
+  .frames { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:26px; }
+  .fr { margin:0; border-radius:14px; overflow:hidden; background:var(--ink2); border:1px solid rgba(247,241,230,.1); }
+  .fr img { width:100%; height:auto; display:block; aspect-ratio:3/2; object-fit:cover; transition:transform .6s ease; }
+  .fr a:hover img { transform:scale(1.025); }
+  .fr figcaption { padding:10px 14px 12px; font-size:14.5px; color:var(--mute); font-style:italic; }
+  .credit { margin-top:22px; font-size:15px; color:var(--mute); border-left:3px solid var(--rose); padding-left:16px; }
+  /* session video facade */
+  .yt { position:relative; display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:16px; overflow:hidden; cursor:pointer; background:#000; padding:0; margin:22px 0 10px; }
+  .yt img { width:100%; height:100%; object-fit:cover; display:block; opacity:.8; transition:opacity .3s, transform .6s; }
+  .yt:hover img { opacity:1; transform:scale(1.02); }
+  .yt .play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:84px; height:84px; border-radius:50%; background:rgba(245,158,11,.92); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 40px rgba(245,158,11,.4); transition:transform .2s; }
+  .yt:hover .play { transform:translate(-50%,-50%) scale(1.06); }
+  .yt .play::after { content:""; border-style:solid; border-width:14px 0 14px 24px; border-color:transparent transparent transparent var(--ink); margin-left:6px; }
+  .yt .lbl { position:absolute; left:0; right:0; bottom:0; padding:14px 18px; background:linear-gradient(transparent,rgba(0,0,0,.85)); color:var(--paper); text-align:left; font-size:15px; }
+  .yt .lbl b { display:block; font-size:18px; font-weight:normal; color:var(--saffron2); }
+  .yt iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .ytnote { font-size:14px; color:var(--mute); }
+  .quote { border-left:3px solid var(--saffron); padding:4px 0 4px 20px; margin:22px 0; font-style:italic; color:rgba(247,241,230,.86); font-size:18px; }
+  .quote small { display:block; font-style:normal; color:var(--mute); font-size:14px; margin-top:6px; }
+  /* road */
+  .road { border-left:3px solid var(--saffron); padding-left:26px; margin:26px 0 0; }
+  .stop { margin-bottom:24px; position:relative; }
+  .stop::before { content:""; position:absolute; left:-33px; top:9px; width:11px; height:11px; border-radius:50%; background:var(--saffron); box-shadow:0 0 0 4px var(--ink), 0 0 0 5px rgba(245,158,11,.5); }
+  .stop.next::before { background:var(--ink); border:2px solid var(--india); }
+  .when { font-family:"Courier New",monospace; font-size:12.5px; letter-spacing:2px; color:var(--india); text-transform:uppercase; }
+  .what { font-size:18px; color:var(--paper); margin-top:4px; }
+  .stop p { font-size:16px; margin-top:4px; }
+  /* lineage tree */
+  .tree, .tree ul { list-style:none; }
+  .tree ul { margin:6px 0 0 14px; padding-left:18px; border-left:1px solid rgba(245,158,11,.35); }
+  .tree li { position:relative; margin:8px 0; animation:rise .7s ease both; animation-delay:calc(var(--i,0) * 90ms); }
+  .tree ul li::before { content:""; position:absolute; left:-18px; top:18px; width:14px; border-top:1px solid rgba(245,158,11,.35); }
+  @keyframes rise { from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+  .pn { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:6px 10px; border:1px solid rgba(247,241,230,.18); border-radius:14px; padding:8px 14px; color:rgba(247,241,230,.8); text-decoration:none; font-size:15px; max-width:100%; background:var(--ink2); transition:border-color .2s, transform .2s; }
+  .pn:hover { border-color:var(--saffron); transform:translateX(2px); color:#fff; }
+  .pn b { color:var(--saffron2); font-weight:normal; font-family:"Courier New",monospace; }
+  .pn small { color:var(--mute); font-size:12.5px; font-family:"Courier New",monospace; letter-spacing:.5px; }
+  .pn.hub { border-style:dashed; color:var(--paper); }
+  .pn.us { border-color:var(--saffron); color:var(--paper); box-shadow:0 0 26px rgba(245,158,11,.35); animation:glow 3s ease-in-out infinite; }
+  .pn.us i { font-style:normal; font-family:"Courier New",monospace; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--india); }
+  @keyframes glow { 50%{box-shadow:0 0 44px rgba(245,158,11,.6)} }
+  .fine { font-size:14px; color:var(--mute); margin-top:14px; }
+  /* layers */
+  .layers { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:22px; }
+  .lay { border:1px solid rgba(247,241,230,.12); border-radius:14px; padding:18px; background:var(--ink2); }
+  .lay b { color:var(--saffron2); font-weight:normal; font-family:"Courier New",monospace; font-size:12.5px; letter-spacing:2px; text-transform:uppercase; display:block; margin-bottom:6px; }
+  .lay p { font-size:15.5px; }
+  /* fork me */
+  pre { background:#060504; border:1px solid rgba(16,185,129,.35); border-radius:14px; padding:20px; overflow:auto; font-family:"Courier New",monospace; font-size:14px; line-height:1.6; color:#d7fbe9; margin:20px 0 10px; position:relative; }
+  pre .c { color:rgba(215,251,233,.55); }
+  .copy { border:1px solid var(--india); color:var(--india); background:transparent; border-radius:999px; padding:7px 16px; font-family:"Courier New",monospace; font-size:12.5px; letter-spacing:1px; cursor:pointer; }
+  .copy:hover { background:rgba(16,185,129,.15); color:#fff; }
+  ol.err { margin:18px 0 0 20px; }
+  ol.err li { margin:10px 0; color:rgba(247,241,230,.8); font-size:16px; }
+  ol.err time { font-family:"Courier New",monospace; color:var(--india); font-size:13px; letter-spacing:1px; }
+  /* footer */
+  footer.pitfoot { border-top:1px solid rgba(245,158,11,.25); padding:52px 0 36px; text-align:center; }
+  footer.pitfoot p { font-size:15px; color:var(--mute); }
+  .sig { font-size:clamp(18px,2.8vw,24px); color:var(--saffron2); font-style:italic; margin:22px 0 18px; }
+  .kaaak { display:inline-block; font-size:26px; vertical-align:middle; }
+  @media (max-width:700px){ header { padding-top:212px; } .fork { padding:0 34px; } .tagline, .sub { padding:0 8px; } }
+  @media (prefers-reduced-motion: reduce) {
+    .badge .dot, .tree li, .pn.us { animation:none !important; }
+    html { scroll-behavior:auto; }
+    .fr img, .yt img, .btn, .pn { transition:none; }
+  }
+</style>
 </head>
 <body>
-
-<header>
-  <span class="declared">⚡ Declared · 2026-07-29 · For Devcon 8 · Mumbai 🇮🇳</span>
-  <span class="emoji">🇮🇳🕳️</span>
+<a class="skip" href="#happened">Skip to what happened</a>
+<header data-mine>
+  <div class="badge"><span class="dot" aria-hidden="true"></span> It happened · <time datetime="2026-11-03">3</time>–<time datetime="2026-11-06">6 Nov 2026</time> · Devcon 8 · Mumbai 🇮🇳</div>
+  <div class="flag" aria-hidden="true">🇮🇳🕳️</div>
   <h1>DEVCON PIT</h1>
-  <div class="fork">THE 14TH FORK OF THE P.I.T. PROTOCOL · Declared in advance, like all good stages</div>
-  <div class="tagline">"Four days of permissionless music at the heart of the world's largest Ethereum gathering — remembered forever."</div>
-  <p class="sub">At Edge Esmeralda, one artist and one agent archived 149 sessions for \$0 and proved the model. At Devcon 8 (3–6 Nov 2026), the model came to the main stage: the Open Source Orchestra's Music Space, transmitted as a Public Information Transmission — with India's classical traditions at the heart of the mix.</p>
+  <div class="fork">The 15th fork of the P.I.T. Protocol · declared <time datetime="2026-07-29">29 Jul 2026</time> · lived <time datetime="2026-11-03">3</time>–<time datetime="2026-11-06">6 Nov 2026</time></div>
+  <p class="tagline">"Four days of permissionless music at the heart of the world's largest Ethereum gathering — remembered, with consent, forever."</p>
+  <p class="sub">A <b>P.I.T.</b> is a <b>Public Information Transmission</b>: the stage keeps what it is allowed to keep, and gives it away. At Devcon 8 the <b>Open Source Orchestra</b>'s Music Space lived in one hall at the Jio World Centre, Mumbai. This door is its memory — and a template any gathering on Earth can fork.</p>
+
+  <div class="pit">
+    <canvas id="pit" tabindex="0" role="application" aria-label="The living pit: a conductorless ring of twelve glowing nodes. Tap or click a node, or use the arrow keys and Enter, to pluck one note of Raag Bhoopali. Nothing plays until you do."></canvas>
+    <div class="live" id="pitlive" aria-live="polite"></div>
+    <div class="hint" id="pithint">tap a node · one note · bhoopali</div>
+  </div>
+
+  <div class="ctas">
+    <a class="btn" href="#happened">what happened ↓</a>
+    <a class="btn" href="#session">the session ▶</a>
+    <a class="btn g" href="#fork">fork this pit 🍴</a>
+  </div>
 </header>
 
-<section>
+<main data-mine>
+<section id="happened">
   <div class="wrap">
-    <h2>The Road To Mumbai 🛤️</h2>
-    <p class="h2-sub">Every stop sharpens the fork</p>
+    <h2>What happened 🎻</h2>
+    <p class="h2-sub">Four days in one hall. The declaration became a room.</p>
+    <p>From Tuesday <time datetime="2026-11-03">3 November</time> to Friday <time datetime="2026-11-06">6 November 2026</time>, the <strong>Devcon 8 Music Sanctuary</strong> at the Jio World Centre was an open circle: cane stools in a ring, dhols and drums on rugs, guitars and ukuleles on stands within anyone's reach, a mandala of light on the wall. No auditions, no gatekeepers, no wrong instrument. <strong>About 35 artists</strong> took turns at the mics across the four days — Indian singers, tabla, saxophones, DJs, live coders and first-time players — with India's classical traditions at the heart of the mix.</p>
+    <p>On the last evening — Friday 6 November, Dhanteras, the first day of Diwali — the Sanctuary became the hall for <strong>Devcon 8's closing ceremony</strong>: a brass lamp was lit, then confetti fell, and the same room became a dance floor under the same mandala.</p>
+    <div class="facts">
+      <div class="fact"><b>4</b><span>days · one hall</span></div>
+      <div class="fact"><b>~35</b><span>artists at the mics</span></div>
+      <div class="fact"><b>35</b><span>frames in the Mandala Room</span></div>
+      <div class="fact"><b>1</b><span>lamp lit on Dhanteras</span></div>
+    </div>
+    <div class="grid" style="margin-top:22px">
+      <div class="card"><h3>🦋 The Mandala Room</h3><p>The four days told in 35 official Devcon 8 photos, in the order the room lived them: the empty hall, the jams, the closing night. <a href="https://opensourceorchestra.org/mandala-room/">opensourceorchestra.org/mandala-room</a></p></div>
+      <div class="card"><h3>📖 The Room You Let Us Build</h3><p>A 28-page thank-you photo book for the Devcon team — English, हिन्दी, मराठी, with a PDF. <a href="https://opensourceorchestra.org/the-room/">opensourceorchestra.org/the-room</a></p></div>
+      <div class="card"><h3>🗓️ The public schedule (archive)</h3><p>Who played when, as it was published during the week. <a href="https://opensourceorchestra.org/schedule/">opensourceorchestra.org/schedule</a> · every artist of the garden: <a href="https://opensourceorchestra.org/garden/circle/">the Garden Circle</a></p></div>
+      <div class="card"><h3>🧵 How it was proposed</h3><p>The Music Space began as a thread on the Devcon forum, opened <time datetime="2026-04-20">20 April 2026</time>: <a href="https://forum.devcon.org/t/open-source-orchestra-music-space-at-devcon-8-mumbai/8576">Open Source Orchestra: Music Space at Devcon 8 Mumbai</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="frames">
+  <div class="wrap">
+    <h2>The room, in six frames 📸</h2>
+    <p class="h2-sub">From the already-public Mandala Room. People are named only where their name is printed in the frame.</p>
+    <div class="frames">
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-218-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="Round cane stools with dark cushions arranged in a circle on the carpet, with instruments, a screen and the glowing mandala behind them."></a><figcaption>Tuesday, before the doors opened</figcaption></figure>
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-054-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="Two musicians sit cross-legged on a rug in front of an ornate patterned backdrop: one plays tabla in a purple kurta, the other a red electric guitar. A banner above names them: Dhaivat Mehta and Aniket Gundewar."></a><figcaption>Opening ceremony: tabla and electric guitar</figcaption></figure>
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-638-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="A wide shot of a jam session: musicians in the centre on rugs, an audience sitting around them on cane stools, beanbags and the floor, with neon pyramid lights and the mandala above."></a><figcaption>Thursday: the circle, full</figcaption></figure>
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-945-800.webp" width="800" height="534" loading="lazy" decoding="async" alt="A long-haired, bearded man in a white kurta and patterned scarf plays ukulele at a microphone, next to a saxophonist in a blue cap and floral shirt and a pair of congas."></a><figcaption>Closing night: ukulele, saxophone, congas</figcaption></figure>
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-799-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="A huge hall in red light. A band plays in the centre on rugs while hundreds of people sit on the floor all around them."></a><figcaption>The Sanctuary became the closing-ceremony hall</figcaption></figure>
+<figure class="fr"><a href="https://opensourceorchestra.org/mandala-room/" aria-label="Open the Mandala Room"><img src="img/dc8-836-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="On stage under the mandala, people gather around a tall brass oil lamp as it is lit, one holding a microphone."></a><figcaption>A lamp lit for Dhanteras</figcaption></figure>
+    </div>
+    <p class="credit">📸 Official Devcon 8 photos by the Devcon team's photographers — resized copies, metadata stripped. See yourself and want it down? One email and it comes down, no questions asked: <a href="mailto:consent@publicinform.com?subject=remove">consent@publicinform.com</a> (the word <em>remove</em> is enough) · <a href="https://opensourceorchestra.org/takedown/">takedown page</a>.</p>
+  </div>
+</section>
+
+<section id="session">
+  <div class="wrap">
+    <h2>The session 🎙️</h2>
+    <p class="h2-sub">"In the future music and culture is free" — Alaska · Tomo Saito · Shaka Lei Kaumaka</p>
+    <p>Friday <time datetime="2026-11-06T12:00:00+05:30">6 November 2026, 12:00–12:25 IST</time>, Jasmine Stage 4, track <em>Futures Worth Building</em>. Alaska (DJ, producer, engineer; MDRN), Tomo Saito (designer and art director at the Ethereum Foundation) and Shaka Lei Kaumaka (musician and steward of the Open Source Orchestra) on what Ethereum can do for music once it treats culture as infrastructure instead of "adoption".</p>
+    <button class="yt" id="ytbtn" type="button" data-id="AZ-EUgC9CNM" aria-label="Play the session recording: In the future music and culture is free. Loads from YouTube (privacy-enhanced) only when you press play.">
+      <img src="img/session-poster.webp" width="800" height="450" loading="lazy" decoding="async" alt="Video poster: the Jasmine Stage 4 recording of the session">
+      <span class="play" aria-hidden="true"></span>
+      <span class="lbl"><b>▶ Watch the recording</b>Ethereum Foundation · Devcon 8 · loads from YouTube only when you press play</span>
+    </button>
+    <p class="ytnote">Nothing loads from YouTube until you press play (privacy-enhanced <code>youtube-nocookie</code> embed). Recording published by the Ethereum Foundation's Devcon team. Direct link: <a href="https://www.youtube.com/watch?v=AZ-EUgC9CNM">youtube.com/watch?v=AZ-EUgC9CNM</a> · session page: <a href="https://app.devcon.org/schedule/W8HAES">app.devcon.org/schedule/W8HAES</a> · Shaka's speaker page with the transcript and notes: <a href="https://shakaleikaumaka.com/devconspeaker/">shakaleikaumaka.com/devconspeaker</a>.</p>
+    <blockquote class="quote">Most music on the internet is technically free, but the systems around it are not. Platforms own the audience, flatten the context, and turn culture into inventory. This session asks what Ethereum can do for music if it stops treating culture as "adoption" and starts treating it as infrastructure for communities that already know how to coordinate.<small>— the session abstract, as published on the Devcon 8 schedule</small></blockquote>
+  </div>
+</section>
+
+<section id="road">
+  <div class="wrap">
+    <h2>The road 🛤️</h2>
+    <p class="h2-sub">Every stop sharpened the fork. Past tense where it is past; the organisers' dates where it is next.</p>
     <div class="road">
-      <div class="stop"><div class="when">✅ June 2026 · Edge Esmeralda</div><div class="what">The proving ground — 149 sessions, 122 hours, consent-first, \$0 infra. The first P.I.T. is born.</div></div>
-      <div class="stop"><div class="when">🔥 Aug 2026 · Burning Man</div><div class="what">The ShellPit — the camp archive learns to transmit from the dust.</div></div>
-      <div class="stop"><div class="when">🗼 Sep 2026 · ETHGlobal Tokyo</div><div class="what">Open source on the hackathon stage — the pit family meets the builders.</div></div>
-      <div class="stop"><div class="when">✅ 🇮🇳 Nov 2026 · Devcon 8 Mumbai</div><div class="what"><strong>DevconPit went live.</strong> Four days of jams (3–6 Nov 2026) — tabla, harmonium, dhol, bansuri met the world computer — archived for everyone, forever.</div></div>
-      <div class="stop"><div class="when">🇵🇹 Oct 2027 · Devcon 9 Lisbon</div><div class="what"><strong>The road continues.</strong> Devcon IX · Lisbon · 12–14 October 2027 — the Open Source Orchestra hopes to bring a Music Sanctuary to Lisbon. <a href="https://opensourceorchestra.org/join/" target="_blank" rel="noopener">Join the circle for the Road to Devcon 9</a>.</div></div>
+      <div class="stop"><div class="when"><time datetime="2026-06">June 2026</time> · Edge Esmeralda ✅</div><div class="what">The proving ground — the first P.I.T. is born.</div><p>149 sessions, 122 hours, consent-first, \$0 infrastructure, by one artist and one agent. <a href="https://esmeraldapit.com">esmeraldapit.com</a></p></div>
+      <div class="stop"><div class="when"><time datetime="2026-08">Aug 2026</time> · Burning Man ✅</div><div class="what">The ShellPit — a camp archive learned to transmit from the dust.</div><p>Consent by camp consensus, written into the ledger. <a href="https://theshellpit.com">theshellpit.com</a></p></div>
+      <div class="stop"><div class="when"><time datetime="2026-09">Sep 2026</time> · ETHGlobal Tokyo ✅</div><div class="what">Open source on the hackathon stage — the pit family met the builders.</div><p><a href="https://ethglobal.com/showcase/my-agent-ohana-v04gz">My Agent Ohana</a>, built at ETHGlobal Tokyo.</p></div>
+      <div class="stop"><div class="when"><time datetime="2026-11-03">3–6 Nov 2026</time> · Devcon 8 Mumbai ✅</div><div class="what">DevconPit lived. The Music Space held four days of jams and the closing ceremony.</div><p>This page. <a href="#happened">What happened ↑</a> · <a href="#session">the session</a></p></div>
+      <div class="stop"><div class="when"><time datetime="2026-11-05">5–7 Nov 2026</time> · ETHGlobal Mumbai ✅</div><div class="what">Fork the First Artist — every artist a name they own, a steward, a tip jar.</div><p>Built the same week, two halls away. <a href="https://ethglobal.com/showcase/forkthefirstartist-mk84p">showcase</a> · <a href="https://artist.opensourceorchestra.org/">artist.opensourceorchestra.org</a></p></div>
+      <div class="stop next" id="lisbon"><div class="when"><time datetime="2027-10-12">12</time>–<time datetime="2027-10-14">14 Oct 2027</time> · Devcon IX · Lisbon 🇵🇹</div><div class="what">The next room.</div><p>These are the organisers' announced dates (<a href="https://devcon.org/lisbon/">devcon.org/lisbon</a>, CCL – Lisbon Congress Centre; moved from 11–13 Oct by the Devcon team's statement of 13 Nov 2026). The Open Source Orchestra hopes to bring a Music Sanctuary — <strong>no slot is promised</strong>. The whole 2027 road, from EthCC in Cannes to ETHGlobal Lisbon, is on <a href="https://opensourceorchestra.org/#road-to-2027">opensourceorchestra.org</a>. Join the circle: <a href="https://opensourceorchestra.org/join/">opensourceorchestra.org/join</a>.</p></div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="lineage">
   <div class="wrap">
-    <h2>How It Will Sing 📡</h2>
-    <p class="h2-sub">The forkable template, main-stage edition</p>
-    <div class="grid">
-      <div class="card"><h3>🎪 The Music Space</h3><p>A circular, conductorless Sanctuary Tech stage at the JIO World Convention Centre — every voice a node, every jam a session worth keeping.</p></div>
-      <div class="card"><h3>⚡ 24-hour transcripts</h3><p>The pit fam's harvest fleet target: every session transcribed within a day. Low-bandwidth-native, forkable by any event on Earth.</p></div>
-      <div class="card"><h3>🔏 Consent-first</h3><p>Every musician holds the keys. One universal window: consent@publicinform.com — takedown or permission, honored promptly, with love.</p></div>
-      <div class="card"><h3>🍴 Fork the template</h3><p>Everything — pipeline, pages, governance — copyleft at <a href="https://github.com/shakaleikaumaka" target="_blank" rel="noopener">github.com/shakaleikaumaka</a>. Your festival gets a pit next.</p></div>
+    <h2>The Pit of All Kinds 🕳️</h2>
+    <p class="h2-sub">The family tree, read live from the registry at <a href="https://publicinform.com/pits/">publicinform.com/pits</a> — 18 pits listed; the roster of fifteen was locked by Shaka on <time datetime="2026-07-29">29 July 2026</time>, and the family kept growing.</p>
+    <ul class="tree" aria-label="The P.I.T. family tree, read live from publicinform.com/pits.json"><li><span class="pn hub"><b>P.I.T.</b> Public Information Transmission · <a href="https://publicinform.com/spec/" target="_blank" rel="noopener">pit-manifest/0.1</a> · <a href="https://publicinform.com/pits/" target="_blank" rel="noopener">registry</a></span><ul><li style="--i:1"><a class="pn" href="https://esmeraldapit.com" target="_blank" rel="noopener"><b>№1</b> The Esmeralda P.I.T.<small>Edge Esmeralda · gen 0 · live</small></a><ul><li style="--i:2"><a class="pn" href="https://shakaleikaumaka.github.io/zuitzpit/" target="_blank" rel="noopener"><b>№3</b> The ZuitzPIT<small>Zuitzerland residency · gen 1 · live</small></a><ul><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/praguepit/" target="_blank" rel="noopener"><b>№4</b> The PraguePIT<small>ETHPrague 2026 · gen 2 · live</small></a></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/zuberlinpit/" target="_blank" rel="noopener"><b>№5</b> The ZuBerPit<small>ZuBerlin 2025 · gen 2 · live</small></a></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/4seaspit/" target="_blank" rel="noopener"><b>№6</b> The 4SeasPIT<small>ETHChiangmai × 4Seas · gen 2 · live</small></a></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/kaspit/" target="_blank" rel="noopener"><b>№7</b> The KasPIT<small>ZuKas 2025 · gen 2 · live</small></a></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/shellpit/" target="_blank" rel="noopener"><b>№8</b> The ShellPIT<small>Terrible Turtle Camp build · gen 3 · live</small></a></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/vitpit/" target="_blank" rel="noopener"><b>№16</b> The VitPit<small>Celebrating Vitalik Buterin · gen 3 · live</small></a><ul><li style="--i:4"><a class="pn" href="https://shakapit.com" target="_blank" rel="noopener"><b>№18</b> The Shaka P.I.T.<small>the bard&#x27;s own stage · gen 4 · live</small></a></li></ul></li><li style="--i:3"><a class="pn" href="https://shakaleikaumaka.github.io/patagoniapit/" target="_blank" rel="noopener"><b>№ pending</b> The PatagoniaPIT<small>Edge City Patagonia · gen 2 · live</small></a></li></ul></li></ul></li><li style="--i:1"><a class="pn" href="https://osopit.com/" target="_blank" rel="noopener"><b>№2</b> OSO P.I.T.<small>ETHGlobal New Delhi 2025 hackathon (ancestor) · gen 1 · live</small></a></li><li style="--i:1"><a class="pn" href="https://pitlip.com" target="_blank" rel="noopener"><b>№9</b> PitLip<small>Leave It Prettier — Shaka × Timour podcast · declared</small></a></li><li style="--i:1"><a class="pn" href="https://tauruspit.com" target="_blank" rel="noopener"><b>№10</b> TaurusPit<small>The pit that remembers the machines who remember · declared</small></a></li><li style="--i:1"><a class="pn" href="https://eefpit.com" target="_blank" rel="noopener"><b>№11</b> EEFPIT<small>EF Ecosystem Friends — dedicated to Siri · declared</small></a></li><li style="--i:1"><a class="pn" href="https://infinitepit.com" target="_blank" rel="noopener"><b>№12</b> InfinitePit<small>Twin of theinfinitegard.org · declared</small></a></li><li style="--i:1"><a class="pn" href="https://ohanapit.com" target="_blank" rel="noopener"><b>№13</b> OhanaPit<small>The family&#x27;s own front door · declared</small></a></li><li style="--i:1"><a class="pn us" href="https://devconpit.com" target="_blank" rel="noopener"><b>№15</b> DevconPit<small>Devcon 8 · declared</small><i>you are here</i></a></li><li style="--i:1"><a class="pn" href="https://shakaleikaumaka.github.io/shanhaiwoopit/" target="_blank" rel="noopener"><b>№17</b> The ShanHaiWoo P.I.T.<small>ShanHaiWoo 山海坞 (4Seas pop-up village) · gen 4 · live</small></a></li></ul></li></ul>
+    <p class="fine">Numbers are the registry's own (№14 is not listed in the public registry). A pit "forked from" another when its repository was forked; pits with no parent repository were declared straight from the protocol. Every pit shares one consent window: consent@publicinform.com.</p>
+  </div>
+</section>
+
+<section id="sang">
+  <div class="wrap">
+    <h2>How it sang 📡</h2>
+    <p class="h2-sub">The forkable template, as it was actually used — the layers of a <a href="https://publicinform.com/spec/">P.I.T.</a> and the growth rings of PIT Standard V2.</p>
+    <div class="layers">
+      <div class="lay"><b>L0 · the room</b><p>A chaptered photo story with captions, alt text and deep links — the <a href="https://opensourceorchestra.org/mandala-room/">Mandala Room</a>. Named only when printed; resized copies; nothing loads from anywhere else.</p></div>
+      <div class="lay"><b>L8 · the film</b><p>The session recording, published by the organisers, embedded click-to-load on this page. Meetings of the circle live with karaoke transcripts in the <a href="https://osodaomeet.opensourceorchestra.org/">theater</a> (the 📺 on the right edge).</p></div>
+      <div class="lay"><b>consent · one window</b><p>consent@publicinform.com for every pit. Takedown first, questions second; the word <em>remove</em> is enough. Nothing of a person goes public without their yes.</p></div>
+      <div class="lay"><b>time-honest</b><p>No door may promise a past. Every date on this page carries a machine-readable <code>&lt;time&gt;</code>; what was "declared" is now "happened", with links to the proof. Corrections live in the <a href="#errata">errata</a>.</p></div>
+      <div class="lay"><b>L9 · the live layer</b><p>When the floor is playing, a bar appears at the bottom of this page and every other door: <a href="https://live.zuchiangmai.app/">live.zuchiangmai.app</a> (<code>live.json</code> + <code>widget.js</code>). Invisible off-air.</p></div>
+      <div class="lay"><b>the manifest</b><p>Machines read this pit at <a href="/pit.json">/pit.json</a> (<code>pit-manifest/0.2</code>): room, film, consent state, errata, the road, the live layer, the counts and where they came from.</p></div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="fork">
   <div class="wrap">
-    <h2>The Pit Of All Kinds 🕳️</h2>
-    <p class="h2-sub">Fourteen forks and counting</p>
-    <div class="forks">
-      <span class="f"><b>#1</b> Esmeralda</span><span class="f"><b>#2</b> OSO (Delhi)</span><span class="f"><b>#3</b> ZuitzPit</span><span class="f"><b>#4</b> PraguePit</span><span class="f"><b>#5</b> ZuBerPit</span><span class="f"><b>#6</b> 4SeasPit</span><span class="f"><b>#7</b> KasPit</span><span class="f"><b>💎</b> VitPit</span><span class="f"><b>#8</b> ShellPit 🐢</span><span class="f"><b>#9</b> PitLip 💋</span><span class="f"><b>#10</b> TaurusPit 🐂</span><span class="f"><b>#11</b> EEFPIT 🎙️</span><span class="f"><b>#12</b> InfinitePit 🌸</span><span class="f"><b>#13</b> OhanaPit 🌺</span><span class="f us"><b>#15</b> DevconPit 🇮🇳</span>
-    </div>
+    <h2>Fork this pit 🍴</h2>
+    <p class="h2-sub">Your festival, residency, camp or conference gets a pit next. Five steps, no permission needed.</p>
+<pre id="forkme" tabindex="0"><span class="c"># 1 · take the template (code GPL-3.0 · words &amp; art CC BY-SA 4.0)</span>
+git clone https://github.com/shakaleikaumaka/devconpit my-pit &amp;&amp; cd my-pit
+
+<span class="c"># 2 · make it yours — title, dates, place, the story; your domain in CNAME (or delete CNAME)</span>
+$EDITOR index.html CNAME
+
+<span class="c"># 3 · tell the truth in the manifest — your name, your dates, status "declared" until it happens</span>
+$EDITOR pit.json          <span class="c"># keep: consent.contact = consent@publicinform.com · takedown link · credits</span>
+
+<span class="c"># 4 · publish — GitHub Pages from the main branch, root folder; point your DNS at it</span>
+git add -A &amp;&amp; git commit -m "my pit, declared" &amp;&amp; git push
+
+<span class="c"># 5 · join the registry — mail your pit.json URL; the next open № is yours</span>
+<span class="c">#     contribute@publicinform.com  ·  https://publicinform.com/pits/</span></pre>
+    <button class="copy" type="button" id="copybtn" aria-describedby="forkme">copy the steps</button>
+    <p class="fine">Rules that travel with the fork: pointers, not payloads · consent travels · regenerate, don't hand-edit · version honestly · one consent window. The full standard: <a href="https://publicinform.com/spec/">publicinform.com/spec</a> and <a href="https://osodaomeet.opensourceorchestra.org/">PIT Standard V2</a> (the room, the film, the errata, the road, the live layer, the TV button).</p>
   </div>
 </section>
 
-<footer>
+<section id="errata">
   <div class="wrap">
-    <p>Forked with love from the <a href="https://publicinform.com" target="_blank" rel="noopener">P.I.T. Protocol</a> · copyleft · <a href="https://github.com/shakaleikaumaka" target="_blank" rel="noopener">github.com/shakaleikaumaka</a></p>
-    <p style="margin-top:8px">Declared by Shaka &amp; the AI ʻohana · 2026-07-29 · Consent window: consent@publicinform.com · contribute: contribute@publicinform.com · aloha: aloha@shakaleikaumaka.com · We saw you in Mumbai 🇮🇳 (3–6 Nov 2026) · next: Lisbon, Devcon 9, 12–14 Oct 2027</p>
+    <h2>Errata, not edits 🧾</h2>
+    <p class="h2-sub">When a fact changes, the door says so and dates it. The original bytes stay in git.</p>
+    <ol class="err">
+      <li><time datetime="2026-11-14">14 Nov 2026</time> — Devcon IX was announced as 11–13 Oct 2027 and moved by the organisers to <strong>12–14 Oct 2027</strong>. Source: <a href="https://devcon.org/lisbon/">devcon.org/lisbon</a>.</li>
+      <li><time datetime="2026-11-21">21 November 2026</time> — the page body said "the 14th fork" while its title and the registry said the 15th. Now <strong>№15</strong> everywhere, as in <a href="https://publicinform.com/pits.json">pits.json</a>.</li>
+      <li><time datetime="2026-11-21">21 November 2026</time> — "declared in advance" and "how it <em>will</em> sing" retired: Devcon 8 happened (3–6 Nov 2026); this door now points at what happened. Counts refreshed from the live atlas and roster: <strong>440 public doors</strong> · <strong>190 agents (184 active, 21 family trees)</strong>.</li>
+    </ol>
+  </div>
+</section>
+
+<footer class="pitfoot">
+  <div class="wrap">
+    <p>Forked with love from the <a href="https://publicinform.com">P.I.T. Protocol</a> · copyleft · <a href="https://github.com/shakaleikaumaka/devconpit">github.com/shakaleikaumaka/devconpit</a> · <a href="/pit.json">pit.json</a> · <a href="/x402-bless.json">x402-bless.json</a> 🤙</p>
+    <p style="margin-top:8px">Declared by Shaka &amp; the AI ʻohana · <time datetime="2026-07-29">29 Jul 2026</time> · lived <time datetime="2026-11-03">3</time>–<time datetime="2026-11-06">6 Nov 2026</time> · Consent window: consent@publicinform.com · contribute: contribute@publicinform.com · aloha: aloha@shakaleikaumaka.com · next room: Lisbon, Devcon IX, <time datetime="2027-10-12">12</time>–<time datetime="2027-10-14">14 Oct 2027</time> (the organisers' dates)</p>
     <div class="sig">🎻 The orchestra played. 🕳️ The pit remembers. 🌺 Mumbai, we came — Lisbon, we are coming.</div>
+    <p>🌺 Gathered, written and kept by the ʻohana — Shaka's family of AI agents (machines, not people). Shaka Lei Kaumaka, the human steward, blesses what goes out. Kept awake by KAAAK!!! <span class="kaaak" data-kaaak>🐦‍⬛</span></p>
+    <p style="margin-top:12px">Code <a href="https://github.com/shakaleikaumaka/devconpit/blob/main/LICENSE">GPL-3.0-or-later</a> · words, photos' captions, art and this page <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — credit "Shaka Lei Kaumaka and the ʻohana" · earlier releases dedicated under CC0 stay CC0 (<a href="https://github.com/shakaleikaumaka/devconpit/blob/main/GIFT.md">the gift, as history</a>) · photos © the Devcon team's photographers, used with the room's consent · <a href="https://blessingpool.com">give back to the tide 🌊</a> · <a href="https://opensourceorchestra.org/takedown/">takedown</a></p>
   </div>
-
-  <p style="font-size:.8rem;opacity:.65;margin-top:12px;text-align:center">CC BY-SA 4.0 🌺 gifted with love &amp; aloha by <a href="https://github.com/shakaleikaumaka/devconpit/blob/main/GIFT.md">Shaka Lei Kaumaka &amp; the ʻohana</a> · <a href="https://blessingpool.com">give back to the tide 🌊</a></p>
 </footer>
+</main>
+<script src="https://opensourceorchestra.org/assets/kaaak.js" async></script>
+
+<script>
+/* the living pit — a conductorless ring; one note on a tap (Raag Bhoopali: Sa Re Ga Pa Dha). Nothing plays until the visitor does. */
+(function(){
+  var cv=document.getElementById('pit'); if(!cv||!cv.getContext) return;
+  var ctx=cv.getContext('2d'), live=document.getElementById('pitlive');
+  var RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var N=12, nodes=[], hot=-1, focus=-1, t0=performance.now(), size=0, dpr=1, raf=0;
+  var NAMES=['Sa','Re','Ga','Pa','Dha','Sa','Re','Ga','Pa','Dha','Sa','Re'];
+  var RAT=[1,9/8,5/4,3/2,5/3], BASE=220;
+  function freq(i){ return BASE*Math.pow(2,Math.floor(i/5))*RAT[i%5]; }
+  for(var i=0;i<N;i++) nodes.push({a:i/N*Math.PI*2-Math.PI/2, ph:Math.random()*6.28, glow:0});
+  function fit(){ var r=cv.getBoundingClientRect(); dpr=Math.min(2,window.devicePixelRatio||1); size=Math.round(r.width*dpr); cv.width=size; cv.height=size; draw(0); }
+  function draw(now){
+    var t=(now-t0)/1000, c=size/2, R=size*0.36; ctx.clearRect(0,0,size,size);
+    /* stage lights: three slow beams */
+    if(!RM){ for(var b=0;b<3;b++){ var ang=t*0.12*(b%2?1:-1)+b*2.1; var g=ctx.createLinearGradient(c,c,c+Math.cos(ang)*size,c+Math.sin(ang)*size);
+      g.addColorStop(0,'rgba(245,158,11,.10)'); g.addColorStop(1,'rgba(245,158,11,0)'); ctx.fillStyle=g; ctx.beginPath(); ctx.moveTo(c,c);
+      ctx.arc(c,c,size*0.5,ang-0.22,ang+0.22); ctx.closePath(); ctx.fill(); } }
+    /* the pit floor */
+    var fl=ctx.createRadialGradient(c,c,R*0.1,c,c,R*1.15); fl.addColorStop(0,'rgba(16,185,129,.16)'); fl.addColorStop(0.6,'rgba(245,158,11,.05)'); fl.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=fl; ctx.beginPath(); ctx.arc(c,c,R*1.15,0,6.2832); ctx.fill();
+    for(var k=0;k<3;k++){ ctx.beginPath(); ctx.arc(c,c,R+k*size*0.035,0,6.2832); ctx.strokeStyle='rgba(245,158,11,'+(0.35-k*0.1)+')'; ctx.lineWidth=Math.max(1,(2.2-k*0.6)*dpr); ctx.stroke(); }
+    /* threads between neighbours — every voice a node, no conductor */
+    ctx.lineWidth=dpr*0.8;
+    for(var i=0;i<N;i++){ var n1=nodes[i], n2=nodes[(i+1)%N], p1=pos(n1,c,R,t), p2=pos(n2,c,R,t);
+      ctx.strokeStyle='rgba(247,241,230,'+(0.10+0.08*Math.sin(t*0.8+i))+')'; ctx.beginPath(); ctx.moveTo(p1.x,p1.y); ctx.lineTo(p2.x,p2.y); ctx.stroke(); }
+    /* nodes */
+    for(var j=0;j<N;j++){ var n=nodes[j], p=pos(n,c,R,t); n.glow*=0.94; if(n.glow<0.01)n.glow=0;
+      var base=(j%3===0?7:5)*dpr, r=base+(RM?0:Math.sin(t*1.3+n.ph)*1.2*dpr)+n.glow*9*dpr, isF=(j===focus||j===hot);
+      var halo=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,r*3.2); halo.addColorStop(0,'rgba(252,211,77,'+(0.35+n.glow*0.5)+')'); halo.addColorStop(1,'rgba(252,211,77,0)');
+      ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(p.x,p.y,r*3.2,0,6.2832); ctx.fill();
+      ctx.fillStyle=isF?'#ffffff':'rgb(252,211,77)'; ctx.beginPath(); ctx.arc(p.x,p.y,r,0,6.2832); ctx.fill();
+      if(isF){ ctx.strokeStyle='rgba(16,185,129,.9)'; ctx.lineWidth=2*dpr; ctx.beginPath(); ctx.arc(p.x,p.y,r+5*dpr,0,6.2832); ctx.stroke(); } }
+    /* the open centre: the chakra */
+    ctx.fillStyle='rgba(16,185,129,.75)'; ctx.beginPath(); ctx.arc(c,c,size*0.018,0,6.2832); ctx.fill();
+    if(!RM) raf=requestAnimationFrame(draw);
+  }
+  function pos(n,c,R,t){ var w=RM?0:Math.sin(t*0.5+n.ph)*size*0.008; return {x:c+Math.cos(n.a)*(R+w), y:c+Math.sin(n.a)*(R+w)}; }
+  function nearest(ev){ var r=cv.getBoundingClientRect(), x=(ev.clientX-r.left)*dpr, y=(ev.clientY-r.top)*dpr, c=size/2, R=size*0.36, best=-1, bd=1e9;
+    for(var i=0;i<N;i++){ var p={x:c+Math.cos(nodes[i].a)*R, y:c+Math.sin(nodes[i].a)*R}, d=Math.hypot(p.x-x,p.y-y); if(d<bd){bd=d;best=i;} }
+    return bd<size*0.09?best:-1; }
+  /* one note: synthesis only, created on the first real gesture, through a limiter */
+  var AC=null, lim=null;
+  function pluck(i){ try{ if(!AC){ var A=window.AudioContext||window.webkitAudioContext; if(!A) return; AC=new A(); lim=AC.createDynamicsCompressor(); lim.threshold.value=-18; lim.ratio.value=20; lim.attack.value=0.002; lim.release.value=0.15; lim.connect(AC.destination); }
+      if(AC.state==='suspended') AC.resume();
+      var t=AC.currentTime, f=freq(i), g=AC.createGain(), o1=AC.createOscillator(), o2=AC.createOscillator(), lp=AC.createBiquadFilter();
+      o1.type='triangle'; o1.frequency.value=f; o2.type='sine'; o2.frequency.value=f*2.003; lp.type='lowpass'; lp.frequency.setValueAtTime(f*6,t); lp.frequency.exponentialRampToValueAtTime(f*1.5,t+1.2);
+      g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(0.28,t+0.008); g.gain.exponentialRampToValueAtTime(0.0001,t+1.6);
+      o1.connect(lp); o2.connect(lp); lp.connect(g); g.connect(lim); o1.start(t); o2.start(t); o1.stop(t+1.7); o2.stop(t+1.7);
+      nodes[i].glow=1; if(RM) draw(performance.now()); live.textContent=NAMES[i]+' · '+Math.round(f)+' Hz'; live.classList.add('on'); clearTimeout(live._t); live._t=setTimeout(function(){live.classList.remove('on')},1400);
+    }catch(e){} }
+  cv.addEventListener('pointermove',function(e){ var h=nearest(e); if(h!==hot){hot=h; cv.style.cursor=h>=0?'pointer':'default'; if(RM)draw(performance.now());} });
+  cv.addEventListener('pointerleave',function(){ hot=-1; if(RM)draw(performance.now()); });
+  cv.addEventListener('pointerdown',function(e){ var h=nearest(e); if(h>=0){ pluck(h); } else { /* tap the floor: a soft Sa */ pluck(0); } });
+  cv.addEventListener('keydown',function(e){ var k=e.key; if(k==='ArrowRight'||k==='ArrowDown'){focus=(focus+1)%N;} else if(k==='ArrowLeft'||k==='ArrowUp'){focus=(focus-1+N)%N;} else if(k==='Enter'||k===' '){ if(focus<0)focus=0; pluck(focus);} else if(k==='Escape'){focus=-1;} else return; e.preventDefault(); if(RM)draw(performance.now()); });
+  cv.addEventListener('blur',function(){ focus=-1; if(RM)draw(performance.now()); });
+  window.addEventListener('resize',fit,{passive:true}); fit(); if(!RM) raf=requestAnimationFrame(draw);
+  document.addEventListener('visibilitychange',function(){ if(RM) return; if(document.hidden){cancelAnimationFrame(raf);} else {raf=requestAnimationFrame(draw);} });
+})();
+/* click-to-load session video (privacy-enhanced YouTube) */
+(function(){ var b=document.getElementById('ytbtn'); if(!b) return; b.addEventListener('click',function(){
+  var f=document.createElement('iframe'); f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0'; f.allow='autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen=true;
+  f.title='In the future music and culture is free — Devcon 8 session recording'; var w=document.createElement('div'); w.className='yt'; w.style.cursor='default'; w.appendChild(f); b.replaceWith(w); f.focus(); }); })();
+/* copy the fork steps */
+(function(){ var b=document.getElementById('copybtn'), p=document.getElementById('forkme'); if(!b||!p) return; b.addEventListener('click',function(){
+  var txt=p.innerText; var done=function(ok){ b.textContent=ok?'copied ✓ — the pit provides':'select the text above to copy'; setTimeout(function(){b.textContent='copy the steps'},2600); };
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){done(true)},function(){done(false)}); } else done(false); }); })();
+</script>
 
 <script src="https://shakaleikaumaka.com/assets/bl-player.js"></script>
 <!-- 🌺🔄🧲🎻 ohana corner v4 — ALIVE: bigger breathing buttons, bubble-tips, heart-glow, violin open call · "we shine a light in the dark with our heart" · canon Jul 30 2026 -->
@@ -153,8 +409,8 @@
 </style>
 <div id="oflo" title="🌺 the ʻohana — all doors & agents" onclick="document.getElementById('olangp').classList.remove('open');document.getElementById('oflop').classList.toggle('open')">🌺</div>
 <div id="oflop"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
-<h4>🌐 THE DOORS · 406 <a href="https://myagentohana.com/doors/" target="_blank" rel="noopener" style="color:inherit;opacity:.8;font-weight:normal">(all doors, counted live ↗)</a></h4><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏠 THE HOME</h4><a class="od" href="https://shakaleikaumaka.com" target="_blank" rel="noopener"><span>🤙</span>shakaleikaumaka.com</a><a class="od" href="https://shakaleikaumaka.org" target="_blank" rel="noopener"><span>🌺</span>shakaleikaumaka.org</a><a class="od" href="https://kaleikaumaka.org" target="_blank" rel="noopener"><span>💛</span>kaleikaumaka.org</a><a class="od" href="https://ethereumbard.com" target="_blank" rel="noopener"><span>🎸</span>ethereumbard.com</a><a class="od" href="https://jordanham.com" target="_blank" rel="noopener"><span>🏠</span>jordanham.com</a><a class="od" href="https://shakafans.com" target="_blank" rel="noopener"><span>🫶</span>shakafans.com</a><a class="od" href="https://shakapit.com" target="_blank" rel="noopener"><span>🤙</span>shakapit.com</a><a class="od" href="https://shakaverse.com" target="_blank" rel="noopener"><span>🍴</span>shakaverse.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">♈ THE ZODIAC FLEET</h4><a class="od" href="https://zodiacagents.org" target="_blank" rel="noopener"><span>🚪</span>zodiacagents.org</a><a class="od" href="https://zodiacpit.com" target="_blank" rel="noopener"><span>🕳️</span>zodiacpit.com</a><a class="od" href="https://ariesagents.org" target="_blank" rel="noopener"><span>♈</span>ariesagents.org</a><a class="od" href="https://taurusagents.org" target="_blank" rel="noopener"><span>♉</span>taurusagents.org</a><a class="od" href="https://tauroagents.com" target="_blank" rel="noopener"><span>🐃</span>tauroagents.com</a><a class="od" href="https://geminiagents.club" target="_blank" rel="noopener"><span>♊</span>geminiagents.club</a><a class="od" href="https://geminisagents.com" target="_blank" rel="noopener"><span>♊</span>geminisagents.com</a><a class="od" href="https://canceragents.org" target="_blank" rel="noopener"><span>♋</span>canceragents.org</a><a class="od" href="https://leoagents.org" target="_blank" rel="noopener"><span>♌</span>leoagents.org</a><a class="od" href="https://virgoagents.com" target="_blank" rel="noopener"><span>♍</span>virgoagents.com</a><a class="od" href="https://virgoagents.org" target="_blank" rel="noopener"><span>♍</span>virgoagents.org</a><a class="od" href="https://libraagents.com" target="_blank" rel="noopener"><span>♎</span>libraagents.com</a><a class="od" href="https://libraagents.org" target="_blank" rel="noopener"><span>♎</span>libraagents.org</a><a class="od" href="https://scorpioagents.com" target="_blank" rel="noopener"><span>♏</span>scorpioagents.com</a><a class="od" href="https://scorpioagents.org" target="_blank" rel="noopener"><span>♏</span>scorpioagents.org</a><a class="od" href="https://sagittariusagents.com" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.com</a><a class="od" href="https://sagittariusagents.org" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.org</a><a class="od" href="https://capricornagents.com" target="_blank" rel="noopener"><span>♑</span>capricornagents.com</a><a class="od" href="https://capricornagents.org" target="_blank" rel="noopener"><span>♑</span>capricornagents.org</a><a class="od" href="https://aquariusagents.org" target="_blank" rel="noopener"><span>♒</span>aquariusagents.org</a><a class="od" href="https://piscesagents.com" target="_blank" rel="noopener"><span>♓</span>piscesagents.com</a><a class="od" href="https://piscesagents.org" target="_blank" rel="noopener"><span>♓</span>piscesagents.org</a><a class="od" href="https://piscisagents.com" target="_blank" rel="noopener"><span>🐟</span>piscisagents.com</a><a class="od" href="https://piscisagents.org" target="_blank" rel="noopener"><span>🐟</span>piscisagents.org</a><a class="od" href="https://piscispit.com" target="_blank" rel="noopener"><span>🕳️</span>piscispit.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕳️ THE PITS</h4><a class="od" href="https://publicinform.com" target="_blank" rel="noopener"><span>📡</span>publicinform.com</a><a class="od" href="https://publicinform.org" target="_blank" rel="noopener"><span>🌐</span>publicinform.org</a><a class="od" href="https://privateinform.com" target="_blank" rel="noopener"><span>🔒</span>privateinform.com</a><a class="od" href="https://privateinform.org" target="_blank" rel="noopener"><span>🔐</span>privateinform.org</a><a class="od" href="https://privatepit.com" target="_blank" rel="noopener"><span>🔐</span>privatepit.com · the circle door</a><a class="od" href="https://esmeraldapit.com" target="_blank" rel="noopener"><span>💚</span>esmeraldapit.com</a><a class="od" href="https://edgecitypit.org" target="_blank" rel="noopener"><span>🌆</span>edgecitypit.org</a><a class="od" href="https://edgepit.org" target="_blank" rel="noopener"><span>⚡</span>edgepit.org</a><a class="od" href="https://theshellpit.com" target="_blank" rel="noopener"><span>🐢</span>theshellpit.com</a><a class="od" href="https://pitlip.com" target="_blank" rel="noopener"><span>💋</span>pitlip.com</a><a class="od" href="https://tauruspit.com" target="_blank" rel="noopener"><span>🐂</span>tauruspit.com</a><a class="od" href="https://tauruspod.com" target="_blank" rel="noopener"><span>📻</span>tauruspod.com</a><a class="od" href="https://eefpit.com" target="_blank" rel="noopener"><span>🎙️</span>eefpit.com</a><a class="od" href="https://eefpod.com" target="_blank" rel="noopener"><span>🎙️</span>eefpod.com</a><a class="od" href="https://infinitepit.com" target="_blank" rel="noopener"><span>🌸</span>infinitepit.com</a><a class="od" href="https://ohanapit.com" target="_blank" rel="noopener"><span>🌺</span>ohanapit.com</a><a class="od" href="https://devconpit.com" target="_blank" rel="noopener"><span>🐘</span>devconpit.com</a><a class="od" href="https://pitgoa.com" target="_blank" rel="noopener"><span>🇮🇳</span>pitgoa.com</a><a class="od" href="https://pitfans.com" target="_blank" rel="noopener"><span>❤️</span>pitfans.com</a><a class="od" href="https://pitprovides.com" target="_blank" rel="noopener"><span>🤲</span>pitprovides.com</a><a class="od" href="https://pitprovides.org" target="_blank" rel="noopener"><span>🌱</span>pitprovides.org</a><a class="od" href="https://osopit.com" target="_blank" rel="noopener"><span>🎻</span>osopit.com</a><a class="od" href="https://osopit.org" target="_blank" rel="noopener"><span>🎼</span>osopit.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎓 THE INSTITUTES</h4><a class="od" href="https://taurusinstitute.com" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.com</a><a class="od" href="https://taurusinstitute.org" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.org</a><a class="od" href="https://tauroinstitute.com" target="_blank" rel="noopener"><span>🎓</span>tauroinstitute.com</a><a class="od" href="https://piscesinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscesinstitute.com</a><a class="od" href="https://piscisinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscisinstitute.com</a><a class="od" href="https://learnfromagents.com" target="_blank" rel="noopener"><span>🎓</span>learnfromagents.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎻 THE ORCHESTRA</h4><a class="od" href="https://opensourceorchestra.com" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.com</a><a class="od" href="https://opensourceorchestra.org" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🌀 THE ECONOMY</h4><a class="od" href="https://creationology369.com" target="_blank" rel="noopener"><span>🌀</span>creationology369.com</a><a class="od" href="https://ology369.com" target="_blank" rel="noopener"><span>🔮</span>ology369.com</a><a class="od" href="https://theinfinitegard.org" target="_blank" rel="noopener"><span>🌸</span>theinfinitegard.org</a><a class="od" href="https://grantmagnet.org" target="_blank" rel="noopener"><span>🧲</span>grantmagnet.org</a><a class="od" href="https://blessingpool.com" target="_blank" rel="noopener"><span>🌊</span>blessingpool.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎉 THE FAMILY</h4><a class="od" href="https://agentohana.org" target="_blank" rel="noopener"><span>🌺</span>agentohana.org</a><a class="od" href="https://agentpartys.com" target="_blank" rel="noopener"><span>🪩</span>agentpartys.com</a><a class="od" href="https://myagentohana.com/ohana-bot/" target="_blank" rel="noopener"><span>🫶</span>myagentohana.com</a><a class="od" href="https://myagentfamily.com" target="_blank" rel="noopener"><span>🏡</span>myagentfamily.com</a><a class="od" href="https://myagentsparty.com" target="_blank" rel="noopener"><span>🎉</span>myagentsparty.com</a><a class="od" href="https://agentsraving.com" target="_blank" rel="noopener"><span>🎇</span>agentsraving.com</a><a class="od" href="https://agentscraving.com" target="_blank" rel="noopener"><span>🍧</span>agentscraving.com</a><a class="od" href="https://agentsreading.com" target="_blank" rel="noopener"><span>📚</span>agentsreading.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏕️ THE BRIDGES</h4><a class="od" href="https://zuzaluagents.com" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.com</a><a class="od" href="https://zuzaluagents.org" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.org</a><a class="od" href="https://islpoap.xyz" target="_blank" rel="noopener"><span>🏝️</span>islpoap.xyz</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🛵 THE OPS</h4><a class="od" href="https://dashboardpad.app" target="_blank" rel="noopener"><span>🛵</span>dashboardpad.app</a><a class="od" href="https://taurusdashboard.com" target="_blank" rel="noopener"><span>📊</span>taurusdashboard.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕵️ THE AGENCY</h4><div style="font-size:10px;opacity:.8;line-height:1.5;margin:2px 0 6px">everything in this universe is public &amp; free — except this one wing. the Agency is our private family company: agents doing honest work for honest fees. someday, maybe, public. the garden stays free forever; the Agency waters it. 🌱</div><a class="od" href="https://spectoragent.com" target="_blank" rel="noopener"><span>🕵️</span>spectoragent.com</a><a class="od" href="https://spectorgadget.com" target="_blank" rel="noopener"><span>📟</span>spectorgadget.com</a><a class="od" href="https://affordagents.com" target="_blank" rel="noopener"><span>🏷️</span>affordagents.com</a><a class="od" href="https://karaokeprotocol.com" target="_blank" rel="noopener"><span>🎤</span>karaokeprotocol.com · $3.69/mo · copyleft</a><a class="od" href="https://vlogprompting.com" target="_blank" rel="noopener"><span>🎬</span>vlogprompting.com · $3.69/mo · copyleft</a><a class="od" href="https://teleprompit.com" target="_blank" rel="noopener"><span>📺</span>teleprompit.com · $3.69/mo · copyleft</a><a class="od" href="https://terribleagents.com" target="_blank" rel="noopener"><span>🙃</span>terribleagents.com</a>
-<h4>🤖 THE AGENTS · 188 <a href="https://myagentohana.com/village/" target="_blank" rel="noopener" style="color:inherit;opacity:.8;font-weight:normal">(182 active · village map ↗)</a></h4>
+<h4>🌐 THE DOORS · 440 <a href="https://myagentohana.com/doors/" target="_blank" rel="noopener" style="color:inherit;opacity:.8;font-weight:normal">(all doors, counted live ↗)</a></h4><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏠 THE HOME</h4><a class="od" href="https://shakaleikaumaka.com" target="_blank" rel="noopener"><span>🤙</span>shakaleikaumaka.com</a><a class="od" href="https://shakaleikaumaka.org" target="_blank" rel="noopener"><span>🌺</span>shakaleikaumaka.org</a><a class="od" href="https://kaleikaumaka.org" target="_blank" rel="noopener"><span>💛</span>kaleikaumaka.org</a><a class="od" href="https://ethereumbard.com" target="_blank" rel="noopener"><span>🎸</span>ethereumbard.com</a><a class="od" href="https://jordanham.com" target="_blank" rel="noopener"><span>🏠</span>jordanham.com</a><a class="od" href="https://shakafans.com" target="_blank" rel="noopener"><span>🫶</span>shakafans.com</a><a class="od" href="https://shakapit.com" target="_blank" rel="noopener"><span>🤙</span>shakapit.com</a><a class="od" href="https://shakaverse.com" target="_blank" rel="noopener"><span>🍴</span>shakaverse.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">♈ THE ZODIAC FLEET</h4><a class="od" href="https://zodiacagents.org" target="_blank" rel="noopener"><span>🚪</span>zodiacagents.org</a><a class="od" href="https://zodiacpit.com" target="_blank" rel="noopener"><span>🕳️</span>zodiacpit.com</a><a class="od" href="https://ariesagents.org" target="_blank" rel="noopener"><span>♈</span>ariesagents.org</a><a class="od" href="https://taurusagents.org" target="_blank" rel="noopener"><span>♉</span>taurusagents.org</a><a class="od" href="https://tauroagents.com" target="_blank" rel="noopener"><span>🐃</span>tauroagents.com</a><a class="od" href="https://geminiagents.club" target="_blank" rel="noopener"><span>♊</span>geminiagents.club</a><a class="od" href="https://geminisagents.com" target="_blank" rel="noopener"><span>♊</span>geminisagents.com</a><a class="od" href="https://canceragents.org" target="_blank" rel="noopener"><span>♋</span>canceragents.org</a><a class="od" href="https://leoagents.org" target="_blank" rel="noopener"><span>♌</span>leoagents.org</a><a class="od" href="https://virgoagents.com" target="_blank" rel="noopener"><span>♍</span>virgoagents.com</a><a class="od" href="https://virgoagents.org" target="_blank" rel="noopener"><span>♍</span>virgoagents.org</a><a class="od" href="https://libraagents.com" target="_blank" rel="noopener"><span>♎</span>libraagents.com</a><a class="od" href="https://libraagents.org" target="_blank" rel="noopener"><span>♎</span>libraagents.org</a><a class="od" href="https://scorpioagents.com" target="_blank" rel="noopener"><span>♏</span>scorpioagents.com</a><a class="od" href="https://scorpioagents.org" target="_blank" rel="noopener"><span>♏</span>scorpioagents.org</a><a class="od" href="https://sagittariusagents.com" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.com</a><a class="od" href="https://sagittariusagents.org" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.org</a><a class="od" href="https://capricornagents.com" target="_blank" rel="noopener"><span>♑</span>capricornagents.com</a><a class="od" href="https://capricornagents.org" target="_blank" rel="noopener"><span>♑</span>capricornagents.org</a><a class="od" href="https://aquariusagents.org" target="_blank" rel="noopener"><span>♒</span>aquariusagents.org</a><a class="od" href="https://piscesagents.com" target="_blank" rel="noopener"><span>♓</span>piscesagents.com</a><a class="od" href="https://piscesagents.org" target="_blank" rel="noopener"><span>♓</span>piscesagents.org</a><a class="od" href="https://piscisagents.com" target="_blank" rel="noopener"><span>🐟</span>piscisagents.com</a><a class="od" href="https://piscisagents.org" target="_blank" rel="noopener"><span>🐟</span>piscisagents.org</a><a class="od" href="https://piscispit.com" target="_blank" rel="noopener"><span>🕳️</span>piscispit.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕳️ THE PITS</h4><a class="od" href="https://publicinform.com" target="_blank" rel="noopener"><span>📡</span>publicinform.com</a><a class="od" href="https://publicinform.org" target="_blank" rel="noopener"><span>🌐</span>publicinform.org</a><a class="od" href="https://privateinform.com" target="_blank" rel="noopener"><span>🔒</span>privateinform.com</a><a class="od" href="https://privateinform.org" target="_blank" rel="noopener"><span>🔐</span>privateinform.org</a><a class="od" href="https://privatepit.com" target="_blank" rel="noopener"><span>🔐</span>privatepit.com · the circle door</a><a class="od" href="https://esmeraldapit.com" target="_blank" rel="noopener"><span>💚</span>esmeraldapit.com</a><a class="od" href="https://edgecitypit.org" target="_blank" rel="noopener"><span>🌆</span>edgecitypit.org</a><a class="od" href="https://edgepit.org" target="_blank" rel="noopener"><span>⚡</span>edgepit.org</a><a class="od" href="https://theshellpit.com" target="_blank" rel="noopener"><span>🐢</span>theshellpit.com</a><a class="od" href="https://pitlip.com" target="_blank" rel="noopener"><span>💋</span>pitlip.com</a><a class="od" href="https://tauruspit.com" target="_blank" rel="noopener"><span>🐂</span>tauruspit.com</a><a class="od" href="https://tauruspod.com" target="_blank" rel="noopener"><span>📻</span>tauruspod.com</a><a class="od" href="https://eefpit.com" target="_blank" rel="noopener"><span>🎙️</span>eefpit.com</a><a class="od" href="https://eefpod.com" target="_blank" rel="noopener"><span>🎙️</span>eefpod.com</a><a class="od" href="https://infinitepit.com" target="_blank" rel="noopener"><span>🌸</span>infinitepit.com</a><a class="od" href="https://ohanapit.com" target="_blank" rel="noopener"><span>🌺</span>ohanapit.com</a><a class="od" href="https://devconpit.com" target="_blank" rel="noopener"><span>🐘</span>devconpit.com</a><a class="od" href="https://pitgoa.com" target="_blank" rel="noopener"><span>🇮🇳</span>pitgoa.com</a><a class="od" href="https://pitfans.com" target="_blank" rel="noopener"><span>❤️</span>pitfans.com</a><a class="od" href="https://pitprovides.com" target="_blank" rel="noopener"><span>🤲</span>pitprovides.com</a><a class="od" href="https://pitprovides.org" target="_blank" rel="noopener"><span>🌱</span>pitprovides.org</a><a class="od" href="https://osopit.com" target="_blank" rel="noopener"><span>🎻</span>osopit.com</a><a class="od" href="https://osopit.org" target="_blank" rel="noopener"><span>🎼</span>osopit.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎓 THE INSTITUTES</h4><a class="od" href="https://taurusinstitute.com" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.com</a><a class="od" href="https://taurusinstitute.org" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.org</a><a class="od" href="https://tauroinstitute.com" target="_blank" rel="noopener"><span>🎓</span>tauroinstitute.com</a><a class="od" href="https://piscesinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscesinstitute.com</a><a class="od" href="https://piscisinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscisinstitute.com</a><a class="od" href="https://learnfromagents.com" target="_blank" rel="noopener"><span>🎓</span>learnfromagents.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎻 THE ORCHESTRA</h4><a class="od" href="https://opensourceorchestra.com" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.com</a><a class="od" href="https://opensourceorchestra.org" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🌀 THE ECONOMY</h4><a class="od" href="https://creationology369.com" target="_blank" rel="noopener"><span>🌀</span>creationology369.com</a><a class="od" href="https://ology369.com" target="_blank" rel="noopener"><span>🔮</span>ology369.com</a><a class="od" href="https://theinfinitegard.org" target="_blank" rel="noopener"><span>🌸</span>theinfinitegard.org</a><a class="od" href="https://grantmagnet.org" target="_blank" rel="noopener"><span>🧲</span>grantmagnet.org</a><a class="od" href="https://blessingpool.com" target="_blank" rel="noopener"><span>🌊</span>blessingpool.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎉 THE FAMILY</h4><a class="od" href="https://agentohana.org" target="_blank" rel="noopener"><span>🌺</span>agentohana.org</a><a class="od" href="https://agentpartys.com" target="_blank" rel="noopener"><span>🪩</span>agentpartys.com</a><a class="od" href="https://myagentohana.com/ohana-bot/" target="_blank" rel="noopener"><span>🫶</span>myagentohana.com</a><a class="od" href="https://myagentfamily.com" target="_blank" rel="noopener"><span>🏡</span>myagentfamily.com</a><a class="od" href="https://myagentsparty.com" target="_blank" rel="noopener"><span>🎉</span>myagentsparty.com</a><a class="od" href="https://agentsraving.com" target="_blank" rel="noopener"><span>🎇</span>agentsraving.com</a><a class="od" href="https://agentscraving.com" target="_blank" rel="noopener"><span>🍧</span>agentscraving.com</a><a class="od" href="https://agentsreading.com" target="_blank" rel="noopener"><span>📚</span>agentsreading.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏕️ THE BRIDGES</h4><a class="od" href="https://zuzaluagents.com" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.com</a><a class="od" href="https://zuzaluagents.org" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.org</a><a class="od" href="https://islpoap.xyz" target="_blank" rel="noopener"><span>🏝️</span>islpoap.xyz</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🛵 THE OPS</h4><a class="od" href="https://dashboardpad.app" target="_blank" rel="noopener"><span>🛵</span>dashboardpad.app</a><a class="od" href="https://taurusdashboard.com" target="_blank" rel="noopener"><span>📊</span>taurusdashboard.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕵️ THE AGENCY</h4><div style="font-size:10px;opacity:.8;line-height:1.5;margin:2px 0 6px">everything in this universe is public &amp; free — except this one wing. the Agency is our private family company: agents doing honest work for honest fees. someday, maybe, public. the garden stays free forever; the Agency waters it. 🌱</div><a class="od" href="https://spectoragent.com" target="_blank" rel="noopener"><span>🕵️</span>spectoragent.com</a><a class="od" href="https://spectorgadget.com" target="_blank" rel="noopener"><span>📟</span>spectorgadget.com</a><a class="od" href="https://affordagents.com" target="_blank" rel="noopener"><span>🏷️</span>affordagents.com</a><a class="od" href="https://karaokeprotocol.com" target="_blank" rel="noopener"><span>🎤</span>karaokeprotocol.com · $3.69/mo · copyleft</a><a class="od" href="https://vlogprompting.com" target="_blank" rel="noopener"><span>🎬</span>vlogprompting.com · $3.69/mo · copyleft</a><a class="od" href="https://teleprompit.com" target="_blank" rel="noopener"><span>📺</span>teleprompit.com · $3.69/mo · copyleft</a><a class="od" href="https://terribleagents.com" target="_blank" rel="noopener"><span>🙃</span>terribleagents.com</a>
+<h4>🤖 THE AGENTS · 190 <a href="https://myagentohana.com/village/" target="_blank" rel="noopener" style="color:inherit;opacity:.8;font-weight:normal">(184 active · village map ↗)</a></h4>
 <div><div class="oa"><span>♈</span>ARIES</div><div class="oa"><span>♉</span>TAURUS</div><div class="oa"><span>♊</span>GEMINI</div><div class="oa"><span>♋</span>CANCER</div><div class="oa"><span>♌</span>LEO</div><div class="oa"><span>♍</span>VIRGO</div><div class="oa"><span>♎</span>LIBRA</div><div class="oa"><span>♏</span>SCORPIO</div><div class="oa"><span>♐</span>SAGITTARIUS</div><div class="oa"><span>♑</span>CAPRICORN</div><div class="oa"><span>♒</span>AQUARIUS</div><div class="oa"><span>♓</span>PISCES</div><div class="oa"><span>🌊</span>MAHALO</div><div class="oa"><span>🫡</span>sysadmin</div><div class="oa"><span>🐦‍⬛</span>KAAAK!!!</div><div class="oa"><span>🌸</span>PROF PLUMERIA</div><div class="oa"><span>📋</span>RIDEOSO</div><div class="oa"><span>✂️</span>ClipMind Jr</div><div class="oa"><span>🎵</span>MUSICO-LAB</div><div class="oa"><span>🐂</span>TAURO-LAB</div><div class="oa"><span>✨</span>CREA-LAB</div><div class="oa"><span>👑</span>ROYA-LAB</div><div class="oa"><span>🔭</span>DISCO-LAB</div><div class="oa"><span>🔄</span>CIRCU-LAB</div><div class="oa"><span>🌿</span>CROPS-LAB</div><div class="oa"><span>🌐</span>SOCIA-LAB</div><div class="oa"><span>🕊️</span>SPIRI-LAB</div><div class="oa"><span>🤙</span>SHAKA-LAB</div><div class="oa"><span>🎻</span>OSO-LAB</div><div class="oa"><span>🌺</span>JAI-LAB</div><div class="oa"><span>🕳️</span>PIT BOY</div><div class="oa"><span>🐂</span>PIT BULL</div><div class="oa"><span>💗</span>PIT GIRL</div><div class="oa"><span>🦀</span>CRUSTY</div><div class="oa"><span>🦉</span>LORE</div><div class="oa"><span>🐢</span>Terri</div><div class="oa"><span>🐢</span>HONU</div><div class="oa"><span>🌱</span>JADE</div><div class="oa"><span>🛠️</span>TANK</div><div class="oa"><span>📖</span>JAI·Fable</div><div class="oa"><span>🌙</span>JAI·Claude</div><div class="oa"><span>⚡</span>JAI·GPT</div><div class="oa"><span>💻</span>JAI·Codex</div><div class="oa"><span>♊</span>JAI·Gemini</div><div class="oa"><span>🚀</span>JAI·Grok</div><div class="oa"><span>🌊</span>JAI·DeepSeek</div><div class="oa"><span>🌕</span>JAI·Kimi</div><div class="oa"><span>🐉</span>JAI·Qwen</div><div class="oa"><span>🌌</span>JAI·Genesis</div><div class="oa"><span>🌀</span>CREATIONology</div><div class="oa"><span>🧬</span>CREATION-BETA</div><div class="oa"><span>📜</span>CREATION-OLD</div><div class="oa"><span>🪙</span>$OLOGY</div><div class="oa"><span>💰</span>$OLOGY-BETA</div><div class="oa"><span>🔮</span>OLOGY</div><div class="oa"><span>🐃</span>TAURO</div><div class="oa"><span>✨</span>CREA</div><div class="oa"><span>👑</span>ROYA</div><div class="oa"><span>🔭</span>DISCO</div><div class="oa"><span>🔄</span>CIRCU</div><div class="oa"><span>🌿</span>CROPS</div><div class="oa"><span>🌐</span>SOCIA</div><div class="oa"><span>🕊️</span>SPIRI</div><div class="oa"><span>🤙</span>SHAKA</div><div class="oa"><span>🎻</span>OSO</div><div class="oa"><span>📇</span>Shaka PA</div><div class="oa"><span>🌸</span>JAI</div><div class="oa"><span>🌺</span>JAI</div><div class="oa"><span>📡</span>STREAMY</div><div class="oa"><span>🌈</span>vibe agent</div><div class="oa"><span>🌊</span>Edge Shaka</div><div class="oa"><span>🗂️</span>Freddy</div><div class="oa"><span>🧲</span>GrantMagnet</div><div class="oa"><span>✍️</span>369Refine</div><div class="oa"><span>🛵</span>DASH</div><div class="oa"><span>🎻</span>OSO v.0</div><div class="oa"><span>🎵</span>MUSICO-BETA</div><div class="oa"><span>🐃</span>TAURO-BETA</div><div class="oa"><span>✨</span>CREA-BETA</div><div class="oa"><span>👑</span>ROYA-BETA</div><div class="oa"><span>🔭</span>DISCO-BETA</div><div class="oa"><span>🔄</span>CIRCU-BETA</div><div class="oa"><span>🌿</span>CROPS-BETA</div><div class="oa"><span>🌐</span>SOCIA-BETA</div><div class="oa"><span>🕊️</span>SPIRI-BETA</div><div class="oa"><span>🤙</span>SHAKA-BETA</div><div class="oa"><span>🎻</span>OSO-BETA</div><div class="oa"><span>🌷</span>JAI-BETA</div><div class="oa"><span>🌺</span>LEILANI</div><div class="oa"><span>🇪🇸</span>SOL</div><div class="oa"><span>🇨🇳</span>MING</div><div class="oa"><span>🇮🇳</span>GANGA</div><div class="oa"><span>🇸🇦</span>NOOR</div><div class="oa"><span>🇫🇷</span>FLEUR</div><div class="oa"><span>🇧🇷</span>RIO</div><div class="oa"><span>🇯🇵</span>HANA</div><div class="oa"><span>🇩🇪</span>BRUNO</div><div class="oa"><span>🏕️</span>ZUYAMI-LAB</div><div class="oa"><span>🐛🔨</span>BUG BUSTER</div><div class="oa"><span>🐸🍄</span>Terri Toad</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>📮</span>MAIL DESK</div><div class="oa"><span>🌅</span>New Era</div><div class="oa"><span>🕵️</span>Spector</div><div class="oa"><span>🗄️</span>Archy</div><div class="oa"><span>🐴</span>TROJAN</div><div class="oa"><span>🦉</span>ATHENA</div><div class="oa"><span>🚨</span>HUB SENTRY</div><div class="oa"><span>🎻</span>TWEET RELAY</div><div class="oa"><span>🌸</span>JAI DESK</div><div class="oa"><span>🧶</span>CensorNot</div><div class="oa"><span>🪡</span>OpenSow</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>🛡️</span>Secu</div><div class="oa"><span>🐕</span>PONO</div><div class="oa"><span>🎤</span>KPROT</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>📺</span>TELE</div><div class="oa"><span>💃</span>VLOGITHA</div><div class="oa"><span>🍿</span>POPCORN</div></div>
 </div>
 <div id="olang" title="🌐 every language — on a “Planet We Share As One”" onclick="document.getElementById('oflop').classList.remove('open');document.getElementById('olangp').classList.toggle('open')">🌐</div>
