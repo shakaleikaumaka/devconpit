@@ -98,8 +98,8 @@
     "widget": "https://live.zuchiangmai.app/widget.js"
   },
   "counts": {
-    "doors_public": 440,
-    "doors_live": 440,
+    "doors_public": 451,
+    "doors_live": 451,
     "doors_source": "https://myagentohana.com/doors/registry.json summary.public",
     "agents_total": 190,
     "agents_active": 184,
